@@ -426,16 +426,17 @@ $('.ft2').click(function() {
   $('.colorte').fadeIn(222);
   $('#textu').val('')
 })
+  var ccwmode = 0 ;
 $('.mode2').click(function() {
   
-  if(pwdmode < 0.5) {
-               pwdmode = 1 ;
+  if(ccwmode < 0.5) {
+               ccwmode = 1 ;
                  $('.mode2').css({'background':'rgba(250,250,250,0.8) url(https://erichsia7.github.io/picture_main_color/fast.png)','background-size':'25px','background-position':'center','background-repeat':'no-repeat'});
     ccw = 256 ;
 }
             
             else {
-              pwdmode = 0 ;
+              ccwmode = 0 ;
                  $('.mode2').css({'background':'rgba(250,250,250,0.8) url(https://erichsia7.github.io/picture_main_color/precision.png)','background-size':'25px','background-position':'center','background-repeat':'no-repeat'});
             ccw = 32 ;
             }
