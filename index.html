@@ -380,7 +380,19 @@ document.execCommand("Copy");
 });
 
 $('.fi3').click(function() {
-  
+  var shur = 'https://erichsia7.github.io/picture_main_color/?s=1&c=' + $('#rgb').val() ;
+if (navigator.share) { 
+   navigator.share({
+      title: document.title,
+      url: shur
+    }).then(() => {
+      
+    })
+    .catch(console.error);
+    } else {
+        shareDialog.classList.add('is-open');
+    }
+
 })
 $('.fti').click(function() {
   $('.colorte').fadeOut(222);
