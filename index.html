@@ -426,7 +426,7 @@ var sharecolor = url.searchParams.get('s') ;
 var shcolor = atob(url.searchParams.get('c')) ;
   
 if(sharecolor === "1") {
-if((hexToRgb(shcolor).r+hexToRgb(shcolor).g+hexToRgb(shcolor)/3 > 128) {
+if((hexToRgb(shcolor).r+hexToRgb(shcolor).g+hexToRgb(shcolor))/3 > 128) {
       $('#rgb').css({'color':'#000'});
     }
     else {
