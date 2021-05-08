@@ -280,6 +280,11 @@ position:fixed;
 
 
 <script>
+  var getUrlString = location.href;
+var url = new URL(getUrlString);
+var sharecolor = url.searchParams.get('s');
+var shcolor = atob(url.searchParams.get('c'));
+  
 var ccw = 256;
 var ccwa = (ccw*ccw) ;
 document.getElementById('cc').width = ccw ;
@@ -419,7 +424,17 @@ if((hexToRgb($('#textu').val()).r+hexToRgb($('#textu').val()).g+hexToRgb($('#tex
     }
 });
 
-
+if(sharecolor === "1") {
+if((hexToRgb($('#textu').val(shcolor)).r+hexToRgb(shcolor).g+hexToRgb(shcolor)/3 > 128) {
+      $('#rgb').css({'color':'#000'});
+    }
+    else {
+      $('#rgb').css({'color':'#fff'});
+    }
+    $('.color').fadeIn(222);
+    $('.color').css({'background':shcolor})
+      $('#rgb').val(shcolor);
+}
 
 var rgbinput =document.getElementById('rgb');
 rgbinput.addEventListener('copy', (event) => {
