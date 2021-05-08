@@ -305,7 +305,7 @@ position:fixed;
 var url = new URL(getUrlString);
 
   
-var ccw = 128;
+var ccw = 32;
 var ccwa = (ccw*ccw) ;
 document.getElementById('cc').width = ccw ;
 document.getElementById('cc').height = ccw ;
@@ -427,7 +427,19 @@ $('.ft2').click(function() {
   $('#textu').val('')
 })
 $('.mode2').click(function() {
-  $('.mode2').css({'background':'rgba(250,250,250,0.8) url(https://erichsia7.github.io/picture_main_color/fast.png)','background-size':'25px','background-position':'center','background-repeat':'no-repeat'});
+  
+  if(pwdmode < 0.5) {
+               pwdmode = 1 ;
+                 $('.mode2').css({'background':'rgba(250,250,250,0.8) url(https://erichsia7.github.io/picture_main_color/fast.png)','background-size':'25px','background-position':'center','background-repeat':'no-repeat'});
+    ccw = 256 ;
+}
+            
+            else {
+              pwdmode = 0 ;
+                 $('.mode2').css({'background':'rgba(250,250,250,0.8) url(https://erichsia7.github.io/picture_main_color/precision.png)','background-size':'25px','background-position':'center','background-repeat':'no-repeat'});
+            ccw = 32 ;
+            }
+
 })
   
   
