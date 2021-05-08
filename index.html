@@ -282,8 +282,7 @@ position:fixed;
 <script>
   var getUrlString = location.href;
 var url = new URL(getUrlString);
-var sharecolor = url.searchParams.get('s');
-var shcolor = atob(url.searchParams.get('c'));
+
   
 var ccw = 256;
 var ccwa = (ccw*ccw) ;
@@ -423,7 +422,9 @@ if((hexToRgb($('#textu').val()).r+hexToRgb($('#textu').val()).g+hexToRgb($('#tex
       $('#rgb').val($('#textu').val());
     }
 });
-
+var sharecolor = url.searchParams.get('s') ;
+var shcolor = atob(url.searchParams.get('c')) ;
+  
 if(sharecolor === "1") {
 if((hexToRgb($('#textu').val(shcolor)).r+hexToRgb(shcolor).g+hexToRgb(shcolor)/3 > 128) {
       $('#rgb').css({'color':'#000'});
