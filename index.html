@@ -380,7 +380,7 @@ document.execCommand("Copy");
 });
 
 $('.fi3').click(function() {
-  var shur = 'https://erichsia7.github.io/picture_main_color/?s=1&c=' + $('#rgb').val() ;
+  var shur = 'https://erichsia7.github.io/picture_main_color/?s=1&c=' + btoa($('#rgb').val()) ;
 if (navigator.share) { 
    navigator.share({
       title: document.title,
