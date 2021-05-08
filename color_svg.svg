@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" xmlns:vectornator="http://vectornator.io" version="1.1" viewBox="0 0 512 512">
+<metadata>
+<vectornator:setting key="DimensionsVisible" value="1"/>
+<vectornator:setting key="PencilOnly" value="0"/>
+<vectornator:setting key="SnapToPoints" value="0"/>
+<vectornator:setting key="OutlineMode" value="0"/>
+<vectornator:setting key="CMYKEnabledKey" value="0"/>
+<vectornator:setting key="RulersVisible" value="1"/>
+<vectornator:setting key="SnapToEdges" value="0"/>
+<vectornator:setting key="GuidesVisible" value="1"/>
+<vectornator:setting key="DisplayWhiteBackground" value="0"/>
+<vectornator:setting key="doHistoryDisabled" value="0"/>
+<vectornator:setting key="SnapToGuides" value="1"/>
+<vectornator:setting key="TimeLapseWatermarkDisabled" value="0"/>
+<vectornator:setting key="Units" value="Pixels"/>
+<vectornator:setting key="DynamicGuides" value="0"/>
+<vectornator:setting key="IsolateActiveLayer" value="0"/>
+<vectornator:setting key="SnapToGrid" value="0"/>
+</metadata>
+<defs>
+<linearGradient y1="134.475" id="LinearGradient" x1="135.154" y2="458.335" x2="424.769" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.845197 -1.26016e-17 -3.44997e-17 0.950759 49.2065 -8.93833)">
+<stop stop-color="#ff7f7f" offset="0"/>
+<stop stop-color="#f9aa6a" offset="0.132394"/>
+<stop stop-color="#f4e375" offset="0.29108"/>
+<stop stop-color="#b3f070" offset="0.449765"/>
+<stop stop-color="#6dfff2" offset="0.642254"/>
+<stop stop-color="#7a8dff" offset="0.815023"/>
+<stop stop-color="#ed8fff" offset="0.923944"/>
+<stop stop-color="#ed8fff" offset="0.952113"/>
+<stop stop-color="#ed8eff" offset="0.985915"/>
+</linearGradient>
+</defs>
+<g id="圖層1" vectornator:layerName="圖層1">
+<path d="M312.406+86.4688C310.326+86.4845+308.258+86.5946+306.188+86.8438C297.203+87.9247+288.137+89.36+279.594+92.3438C240.77+105.903+197.717+125.507+170.25+157.625C117.791+218.966+112.085+317.685+164.375+380.562C207.713+432.675+286.956+441.94+338.906+395.5C350.518+385.12+360.714+373.165+370.594+361.125C373.305+357.821+375.154+353.817+376.469+349.75C388.594+312.233+350.617+292.517+324.594+316.062C307.945+331.126+297.955+358.498+273.094+362.906C258.305+365.529+242.687+363.614+229.906+355.406C185.799+327.081+180.007+263.23+203.438+219.469C222.932+183.06+268.489+155.373+308.75+148.562C311.676+148.068+315.069+149.454+317.125+151.594C324.021+158.771+331.743+179.281+345.688+181.75C355.9+183.558+365.638+181.55+373.344+175.062C382.797+167.104+386.038+153.248+382.969+141.5C375.142+111.543+343.613+86.2326+312.406+86.4688Z" opacity="1" fill="url(#LinearGradient)"/>
+</g>
+</svg>
