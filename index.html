@@ -455,6 +455,26 @@ if((hexToRgb($('#textu').val()).r+hexToRgb($('#textu').val()).g+hexToRgb($('#tex
       $('#rgb').val($('#textu').val());
     }
 });
+  
+  $('.rand2').click(function() {
+
+    
+if((hexToRgb($('#textu').val()).r+hexToRgb($('#textu').val()).g+hexToRgb($('#textu').val()).b)/3 > 128) {
+      $('#rgb').css({'color':'#000'});
+    }
+    else {
+      $('#rgb').css({'color':'#fff'});
+    }
+    $('.color').fadeIn(222);
+    $('.color').css({'background':$('#textu').val()})
+      $('#rgb').val($('#textu').val());
+    
+});
+  
+  
+  
+  
+  
 var sharecolor = url.searchParams.get('s') ;
 var shcolor = atob(url.searchParams.get('c')) ;
   
