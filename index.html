@@ -470,7 +470,15 @@ var rand_b = Math.floor(Math.random() * 255);
 
 
     history.pushState(null, null,'https://erichsia7.github.io/picture_main_color/?s=1&c=' + btoa(rgbToHex(rand_r,rand_g,rand_b)));
-    
+    if((rand_r+rand_g+rand_b)/3 > 128) {
+      $('#rgb').css({'color':'#000'});
+    }
+    else {
+      $('#rgb').css({'color':'#fff'});
+    }
+    $('.color').fadeIn(222);
+    $('.color').css({'background':rgbToHex(rand_r,rand_g,rand_b)})
+      $('#rgb').val(rgbToHex(rand_r,rand_g,rand_b));   
     
 
 });
