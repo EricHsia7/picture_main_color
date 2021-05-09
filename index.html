@@ -394,7 +394,8 @@ var load = 0 ;
     else {
       $('#rgb').css({'color':'#fff'});
     }
-    $('.color').fadeIn(222)
+    $('.color').fadeIn(222);
+    history.pushState(null, null,'https://erichsia7.github.io/picture_main_color/?s=1&c=' + btoa(rgbToHex(Math.ceil(rgb_r/ccwa), Math.ceil(rgb_g/ccwa), Math.ceil(rgb_b/ccwa))));
   },200);
     };
 
@@ -460,6 +461,7 @@ if((hexToRgb($('#textu').val()).r+hexToRgb($('#textu').val()).g+hexToRgb($('#tex
     $('.color').fadeIn(222);
     $('.color').css({'background':$('#textu').val()})
       $('#rgb').val($('#textu').val());
+      history.pushState(null, null,'https://erichsia7.github.io/picture_main_color/?s=1&c=' + btoa($('#textu').val()));
     }
 });
   
@@ -469,7 +471,7 @@ var rand_g = Math.floor(Math.random() * 255);
 var rand_b = Math.floor(Math.random() * 255);
 
 
-    //history.pushState(null, null,'https://erichsia7.github.io/picture_main_color/?s=1&c=' + btoa(rgbToHex(rand_r,rand_g,rand_b)));
+    history.pushState(null, null,'https://erichsia7.github.io/picture_main_color/?s=1&c=' + btoa(rgbToHex(rand_r,rand_g,rand_b)));
     if((rand_r+rand_g+rand_b)/3 > 128) {
       $('#rgb').css({'color':'#000'});
     }
