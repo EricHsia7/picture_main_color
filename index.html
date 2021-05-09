@@ -457,18 +457,20 @@ if((hexToRgb($('#textu').val()).r+hexToRgb($('#textu').val()).g+hexToRgb($('#tex
 });
   
   $('.rand2').click(function() {
+var rand_r = Math.floor(Math.random() * 255);
+var rand_g = Math.floor(Math.random() * 255);  
+var rand_b = Math.floor(Math.random() * 255);
 
-    
-if((hexToRgb($('#textu').val()).r+hexToRgb($('#textu').val()).g+hexToRgb($('#textu').val()).b)/3 > 128) {
+
+if((rand_r+rand_g+rand_b)/3 > 128) {
       $('#rgb').css({'color':'#000'});
     }
     else {
       $('#rgb').css({'color':'#fff'});
     }
     $('.color').fadeIn(222);
-    $('.color').css({'background':$('#textu').val()})
-      $('#rgb').val($('#textu').val());
-    
+    $('.color').css({'background':rgbToHex(rand_r,rand_g,rand_b)})
+      $('#rgb').val(rgbToHex(rand_r,rand_g,rand_b));   
 });
   
   
