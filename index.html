@@ -313,7 +313,8 @@ width:70%;
 <script>
   var getUrlString = location.href;
 var url = new URL(getUrlString);
-
+var sharecolor = url.searchParams.get('s') ;
+var shcolor = atob(url.searchParams.get('c')) ;
   
 var ccw = 256;
 var ccwa = (ccw*ccw) ;
@@ -405,7 +406,13 @@ var load = 0 ;
 }
 
 $('.fi').click(function() {
-$('.color').fadeOut(222)
+$('.color').fadeOut(222);
+if(sharecolor === "1") {
+  setTimeout(function(){
+    history.pushState(null, null,'https://erichsia7.github.io/picture_main_color/');
+  }, 222);
+  
+}
 })
 
 $('.fi2').click(function() {
@@ -477,8 +484,7 @@ if((rand_r+rand_g+rand_b)/3 > 128) {
   
   
   
-var sharecolor = url.searchParams.get('s') ;
-var shcolor = atob(url.searchParams.get('c')) ;
+
   
 if(sharecolor === "1") {
 if((hexToRgb(shcolor).r+hexToRgb(shcolor).g+hexToRgb(shcolor))/3 > 128) {
